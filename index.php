@@ -74,7 +74,7 @@ $whatsappBaseUrl = "https://wa.me/{$whatsappClean}?text=";
     <title>أنجز | المكان الصحيح لإنجاز أعمالك الأكاديمية والمهنية</title>
     <meta name="description" content="منصة أنجز تقدم خدمات متكاملة واحترافية: كتابة بحوث، تصميم سير ذاتية CV، خطابات تقديم Cover Letter، تصميم دعوات فاخرة، وإعداد دراسات جدوى.">
     
-    <link rel="icon" type="image/png" href="public/images/logo.png">
+    <link rel="icon" type="image/png" href="public/images/hero_logo.png?v=2">
 
     <!-- Fonts: Cairo & IBM Plex Sans Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,8 +147,8 @@ $whatsappBaseUrl = "https://wa.me/{$whatsappClean}?text=";
                 
                 <!-- Brand Logo & Slogan -->
                 <a href="#hero" class="flex items-center gap-3.5 group">
-                    <div class="w-12 h-12 rounded-xl bg-white p-1 border border-slate-200/80 shadow-sm flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105">
-                        <img src="public/images/logo.png" alt="شعار أنجز" class="w-full h-full object-contain">
+                    <div class="w-13 h-13 rounded-full bg-white p-0.5 border border-slate-200/90 shadow-sm flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105">
+                        <img src="public/images/hero_logo.png?v=2" alt="شعار أنجز" class="w-11 h-11 object-contain">
                     </div>
                     <div class="flex flex-col">
                         <div class="flex items-center gap-1.5">
@@ -200,7 +200,16 @@ $whatsappBaseUrl = "https://wa.me/{$whatsappClean}?text=";
         <!-- Mobile Dropdown Navigation -->
         <div x-show="mobileOpen" 
              x-cloak
-             class="md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+             class="md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <div class="flex items-center gap-3 pb-3 mb-1 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-full bg-white p-0.5 border border-slate-200 shadow-sm flex items-center justify-center overflow-hidden">
+                    <img src="public/images/hero_logo.png?v=2" alt="شعار أنجز" class="w-10 h-10 object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-base font-black text-navy-800">منصة أنجز</span>
+                    <span class="text-[11px] font-semibold text-slate-500">المكان الصحيح لإنجاز أعمالك</span>
+                </div>
+            </div>
             <a @click="mobileOpen = false" href="#hero" class="block px-3 py-2 rounded-lg font-bold text-navy-800 hover:bg-ocean-50 hover:text-ocean-600 transition-colors">الرئيسية</a>
             <a @click="mobileOpen = false" href="#services" class="block px-3 py-2 rounded-lg font-bold text-navy-800 hover:bg-ocean-50 hover:text-ocean-600 transition-colors">خدماتنا</a>
             <a @click="mobileOpen = false" href="#samples" class="block px-3 py-2 rounded-lg font-bold text-navy-800 hover:bg-ocean-50 hover:text-ocean-600 transition-colors">معرض النماذج</a>
@@ -324,12 +333,13 @@ $whatsappBaseUrl = "https://wa.me/{$whatsappClean}?text=";
                         <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-ocean-500/20 via-navy-800/10 to-transparent blur-xl"></div>
                         <div class="relative rounded-3xl bg-white p-6 sm:p-8 border border-slate-200/90 shadow-card">
                             
-                            <div class="bg-gradient-to-b from-navy-50 to-white rounded-2xl p-6 border border-slate-100 flex flex-col items-center justify-center text-center">
-                                <div class="w-28 h-28 sm:w-32 sm:h-32 mb-4 drop-shadow-sm">
-                                    <img src="public/images/logo.png" alt="أنجز - الشعار الرسمي" class="w-full h-full object-contain">
+                            <div class="bg-gradient-to-b from-ocean-50/40 via-white to-white rounded-2xl p-6 border border-slate-100 flex flex-col items-center justify-center text-center">
+                                <div class="relative w-48 h-48 sm:w-56 sm:h-56 mb-3 drop-shadow-md transition-transform duration-500 hover:scale-105 flex items-center justify-center">
+                                    <img src="public/images/hero_logo.png" alt="أنجز - الشعار الرسمي" class="w-full h-full object-contain">
                                 </div>
-                                <div class="inline-block px-3 py-1 rounded-full bg-navy-800 text-white text-xs font-bold tracking-wide">
-                                    المكان الصحيح لإنجاز أعمالك
+                                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800 text-white text-xs font-bold tracking-wide shadow-sm">
+                                    <span class="w-2 h-2 rounded-full bg-ocean-400"></span>
+                                    <span>المكان الصحيح لإنجاز أعمالك</span>
                                 </div>
                             </div>
 
@@ -399,6 +409,18 @@ $whatsappBaseUrl = "https://wa.me/{$whatsappClean}?text=";
                                     <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                                 <?php elseif ($service['icon'] === 'trending-up'): ?>
                                     <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                                <?php elseif ($service['icon'] === 'briefcase'): ?>
+                                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                <?php elseif ($service['icon'] === 'award'): ?>
+                                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                                <?php elseif ($service['icon'] === 'edit'): ?>
+                                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                                <?php elseif ($service['icon'] === 'check-circle'): ?>
+                                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <?php elseif ($service['icon'] === 'sparkles'): ?>
+                                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.286L13 21l-2.286-6.857L5 12l5.714-2.286L13 3z"/></svg>
+                                <?php elseif ($service['icon'] === 'globe'): ?>
+                                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
                                 <?php else: ?>
                                     <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                                 <?php endif; ?>
@@ -789,8 +811,8 @@ $whatsappBaseUrl = "https://wa.me/{$whatsappClean}?text=";
                 
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-11 h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow">
-                            <img src="public/images/logo.png" alt="أنجز" class="w-full h-full object-contain">
+                        <div class="w-12 h-12 rounded-full bg-white p-0.5 flex items-center justify-center shadow overflow-hidden">
+                            <img src="public/images/hero_logo.png?v=2" alt="أنجز" class="w-full h-full object-contain">
                         </div>
                         <div>
                             <span class="text-2xl font-black text-white">أنجز</span>
